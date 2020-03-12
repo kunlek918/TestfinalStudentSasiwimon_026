@@ -12,7 +12,7 @@ class Student extends Model
     protected $fillable = ['stu_code','stu_pre','stu_fname','stu_lname','major_id ','fac_id  '];
 
     public function facultys(){
-        return $this->belongsTo(Facultys::class,'fac_id');
+        return $this->belongsTo(Facultys::class,'fac_id','fac_name');
 
     }
 }
