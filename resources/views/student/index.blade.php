@@ -26,13 +26,14 @@
                         <th>คณะ</th>
                     </tr>
                         @foreach ($student as $students)
+
                         <tr>
                              <td>{{ $students->stu_code}}</td>
                              <td>{{ $students->stu_pre}}</td>
                              <td>{{ $students->stu_fname}}</td>
                              <td>{{ $students->stu_lname}}</td>
                              <td>{{ $students->major_id}}</td>
-                             <td>{{ $students->fac_name}}</td>
+                             <td>{{ $students->facultys->fac_name}}</td>
 
 
 
